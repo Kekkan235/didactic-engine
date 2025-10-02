@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Duck Hunt 🦆</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Emoji Duck Hunt 🐶🔫</h1>
+
+  <div id="game">
+    <!-- HUD поверх фона -->
+    <div id="hud">
+      <div class="panel">
+        <label>СЧЁТ</label>
+        <div id="score" class="digits">0000</div>
+      </div>
+      <div class="panel">
+        <label>РАУНД</label>
+        <div id="round" class="digits">1</div>
+      </div>
+      <div class="panel">
+        <label>ЖИЗНИ</label>
+        <div id="lives" class="digits">❤️❤️❤️</div>
+      </div>
+      <div class="panel">
+        <label>ПАТРОНЫ</label>
+        <div id="ammo" class="bullets">🔫🔫🔫</div>
+      </div>
+    </div>
+
+    <!-- Фоновые элементы -->
+    <div class="ground"></div>
+    <div class="cloud">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <div class="bush" style="left:50px;">🌳</div>
+    <div class="bush" style="left:200px;">🌲</div>
+    <div class="bush" style="left:400px;">🌳</div>
+  </div>
+
+  <p id="status">Кликай по утке 🦆! Попадание = +10 очков 🎯</p>
+
+  <script src="game.js"></script>
+</body>
+</html>
